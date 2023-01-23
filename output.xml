@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230122 12:41:51.268" rpa="false" schemaversion="3">
+<suite id="s1" name="FirstTest" source="d:\Repositories\RobotFramework-n00b\FirstTest.robot">
+<test id="s1-t1" name="Copy file from source to Target" line="22">
+<kw name="Copy File" library="OperatingSystem">
+<arg>${copy_this}</arg>
+<arg>${tPath}</arg>
+<doc>Copies the source file into the destination.</doc>
+<msg timestamp="20230122 12:41:52.012" level="INFO" html="true">Copied file from '&lt;a href="file://D:\Playground\Source\readme.md"&gt;D:\Playground\Source\readme.md&lt;/a&gt;' to '&lt;a href="file://D:\Playground\Target\readme.md"&gt;D:\Playground\Target\readme.md&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20230122 12:41:51.995" endtime="20230122 12:41:52.014"/>
+</kw>
+<status status="PASS" starttime="20230122 12:41:51.993" endtime="20230122 12:41:52.014"/>
+</test>
+<status status="PASS" starttime="20230122 12:41:51.272" endtime="20230122 12:41:52.017"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="FirstTest">FirstTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
