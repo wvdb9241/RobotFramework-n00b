@@ -8,16 +8,16 @@ Library    OperatingSystem
 *** Variables ***
 ${sPath}   D:\\Playground\\Source\\
 ${tPath}   D:\\Playground\\Target\\
-${File}    readme.md
-${copy_this}    ${sPath}${File}
+
 
 *** Test Cases ***
 This is my testcase
     log  hello world
 
 Example Test
-    New Page    https://playwright.dev
-    Get Text    h1    ==    Playwright enables reliable end-to-end testing for modern web apps.
+    New Page  http://khanabook.weebly.com/store/c1/Featured_Products.html
+    #Wait For Elements State    id=input-233928631404364620
 
 Copy file from source to Target
-    OperatingSystem.Copy File    ${copy_this}    ${tPath}
+    OperatingSystem.Copy File    ${sPath}readme.md   ${tPath}
+  

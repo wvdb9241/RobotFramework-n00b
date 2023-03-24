@@ -1,26 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230122 12:41:51.268" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230123 18:45:06.355" rpa="false" schemaversion="3">
 <suite id="s1" name="FirstTest" source="d:\Repositories\RobotFramework-n00b\FirstTest.robot">
-<test id="s1-t1" name="Copy file from source to Target" line="22">
-<kw name="Copy File" library="OperatingSystem">
-<arg>${copy_this}</arg>
-<arg>${tPath}</arg>
-<doc>Copies the source file into the destination.</doc>
-<msg timestamp="20230122 12:41:52.012" level="INFO" html="true">Copied file from '&lt;a href="file://D:\Playground\Source\readme.md"&gt;D:\Playground\Source\readme.md&lt;/a&gt;' to '&lt;a href="file://D:\Playground\Target\readme.md"&gt;D:\Playground\Target\readme.md&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20230122 12:41:51.995" endtime="20230122 12:41:52.014"/>
+<test id="s1-t1" name="Example Test" line="17">
+<kw name="New Page" library="Browser">
+<arg>http://khanabook.weebly.com/store/c1/Featured_Products.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20230123 18:45:08.862" level="INFO">Successfully initialized new page object and opened url: http://khanabook.weebly.com/store/c1/Featured_Products.html</msg>
+<msg timestamp="20230123 18:45:08.864" level="INFO">No browser and context was open. New browser and context was automatically opened when page is created.</msg>
+<status status="PASS" starttime="20230123 18:45:07.075" endtime="20230123 18:45:08.864"/>
 </kw>
-<status status="PASS" starttime="20230122 12:41:51.993" endtime="20230122 12:41:52.014"/>
+<kw name="Wait For Elements State" library="Browser">
+<arg>identifier=input-233928631404364620</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20230123 18:45:18.964" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230123 18:45:18.965" level="FAIL">Error: locator.waitFor: Unknown engine "identifier" while parsing selector identifier=input-233928631404364620
+=========================== logs ===========================
+waiting for locator('identifier=input-233928631404364620') to be visible
+============================================================</msg>
+<status status="FAIL" starttime="20230123 18:45:08.865" endtime="20230123 18:45:18.968"/>
+</kw>
+<status status="FAIL" starttime="20230123 18:45:07.073" endtime="20230123 18:45:18.968">Error: locator.waitFor: Unknown engine "identifier" while parsing selector identifier=input-233928631404364620
+=========================== logs ===========================
+waiting for locator('identifier=input-233928631404364620') to be visible
+============================================================</status>
 </test>
-<status status="PASS" starttime="20230122 12:41:51.272" endtime="20230122 12:41:52.017"/>
+<status status="FAIL" starttime="20230123 18:45:06.359" endtime="20230123 18:45:18.989"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="FirstTest">FirstTest</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="FirstTest">FirstTest</stat>
 </suite>
 </statistics>
 <errors>

@@ -1,10 +1,5 @@
 # Python en Robotframework installatie
 
-# git stuff
-
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
-
 ## Installatie
 
 1. Installeer [Python](https://www.python.org/downloads/windows/)
